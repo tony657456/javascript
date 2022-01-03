@@ -16,6 +16,7 @@ float: block의 형태가 아니라 inline으로 사용할 수 있게 해주는 
 margin: 0 auto 이런식으로 잡으면 마진을 다 평등하게 부여하는 것
 ```
 
+<br/>
 ### JavaScript
 
 ```javascript
@@ -39,4 +40,28 @@ margin: 0 auto 이런식으로 잡으면 마진을 다 평등하게 부여하는
                 }, 3000)
             }
 });
+```
+
+```javascript
+// 자주 사용되는 add, remove ㅆ는 방식
+for (var i = 0; i < navLi.length; i++) {
+  navLi[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    n = e.currentTarget.index; // 현재 클릭한 대상의 인덱스
+
+    for (var j = 0; j < navLi.length; j++) {
+      if (j == n) {
+        navLi[i].classList.add("on");
+        infoArray[i].classList.remove("active");
+      } else {
+        navLi[i].classList.add("on");
+        infoArray[i].classList.remove("active");
+      }
+    }
+  });
+}
+```
+
+```
+
 ```
