@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+
+        const Car = {
+            name:"소나타",
+            color:"black",
+            start:function(){
+                return "시동을 켭니다.";
+            }
+        }
+
+        // console.log(Car.name);
+        // console.log(Car.color);
+        // console.log(Car.start());
+
+        // 생성자를 이용한 객체 생성
+        function Dog(name, color){
+            this.name = name;
+            this.color = color;
+            this.sleep = function(){
+                return `${this.name}가 잠을 잡니다.`;
+            }
+        }
+
+        const Rucy = new Dog("루시","흰색");
+            console.log(Rucy.name);
+            console.log(Rucy.color);
+            console.log(Rucy.sleep());
+
+        
+    </script>
+   
+</body>
+</html>

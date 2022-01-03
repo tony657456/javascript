@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+
+        div{width: 100px; height: 100px;
+        border: 1px solid #000}
+
+    </style>
+    <script>
+
+        $(".box01").delay(0).css({width: "100px"}).animate({width:"1000px"}, 1000);
+        // $(".box02").delay(0).css("background-color", "red").animate("background-color", "blue");
+        $(".box03").delay(0).css({fontsize: "15px"}).animate({fontsize:"50px"}, 500);
+        $(".box04").delay(0).css({left: "0px"}).animate({left:"1000px"}, 1000);
+        $(".box05").delay(0).css({opacity:0}).animate({opacity:0}, 500);
+            
+        
+    </script>
+</head>
+<body>
+
+    <div class="box01">box01</div>
+    <div class="box02">box02</div>
+    <div class="box03">box03</div>
+    <div class="box04">box0</div>
+    <div class="box05">box05</div>
+
+</body>
+</html>

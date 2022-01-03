@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+
+        *{margin: 0; padding: 0;}
+        img{border: 0;}
+        ul, li{list-style: none;}
+        a{text-decoration: none;}
+
+        /* 전체영역 */
+        #slider{margin: 0 auto; width: 600px; height: 350px; position: relative; border: 3px solid #000;}
+        
+        /* 이미지 박스 */
+        #viewer{height: 350px; position: relative;}
+
+        /* 이미지 좌표 */
+        #viewer > img{position: absolute; top: 0px;}
+        #viewer > img:nth-child(1){left: 0;}
+        #viewer > img:nth-child(2){left: 600px;}
+        #viewer > img:nth-child(3){left: 1200px;}
+        #viewer > img:nth-child(4){left: 1800px;}
+        
+    </style>
+
+    <script>
+
+    </script>
+
+</head>
+<body>
+
+    <div id="slider">
+        <div id ="viewer">
+            <img src="images/asepa1.jpeg" alt=""> 
+            <img src="images/asepa2.jpeg" alt=""> 
+            <img src="images/asepa3.jpeg" alt=""> 
+            <img src="images/asepa4.jpeg" alt=""> 
+        </div>
+
+        <ul class="btns">
+            <li class="on"><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+        </ul>
+    </div>
+
+    <div id="btn_g">
+    <button id="prev">previous</button>
+    <button id="next">next</button>
+    </div>
+
+</body>
+</html>

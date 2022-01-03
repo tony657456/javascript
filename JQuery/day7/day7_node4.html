@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #portfolio{font-size: 20px; background-color: blueviolet;}
+        #portfolio_s{font-size: 20px; background-color: rgb(168, 211, 236);}
+    </style>
+</head>
+<body>
+
+    <div class = "container">
+        <ul id="tutorial">
+            <li class="html">1</li>
+            <li class="css">2</li>
+            <li class="css3">3</li>
+            <li class="javascript">4</li>
+            <li class="jquery">5</li>
+            <li class="blank">6</li>
+        </ul>
+        <p id="portfolio">portfolio</p>
+    </div>
+
+    <script>
+        
+        var liList = document.querySelectorAll('#tutorial li');
+        for(var i = 0; i < liList.length; i++){
+            liList[i].addEventListener("click", function(e){
+                var ul = e.target.parentNode; // parentElement는 부모요소를 찾아감
+                ul.style.backgroundColor="#666";
+            });
+        }
+
+    </script>
+   
+</body>
+</html>

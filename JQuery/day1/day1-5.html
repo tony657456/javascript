@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        // while (i>2) {
+        //     console.log(`현재 i의 값 : ${i}`);
+        // }
+
+        // do{
+        //     console.log(`현재 j의 값 : ${j}`);
+        // }while (j>2);
+
+        // while (i <= 10) {
+        //     console.log(`${i}번째 반복 : 안녕하세요. JavaScript`)
+        //     ++i;
+        // }
+        // let sum = 0;
+        // while(i <= 10) {
+        //     sum += i;
+        //     i++;
+        // }
+        // console.log(`1부터 10까지의 총합은: ${sum}`)
+        // let sum = 0;
+        // for(i = 1; i<=100; i++) {
+        //     if(i%2 == 0){
+        //         sum += i;
+        //     }
+        // }
+        // console.log(`짝수의 합은: ${sum}`)
+
+        const dan = Number(prompt('원하는 단을 입력하세요'));
+        document.write(`<p>${dan}</p>`);
+
+        let i = 1;
+
+        while(i<=9) {
+            document.write(`<p>${dan} * ${i} = ${dan * i}</p>`);
+            i++;
+        }
+
+    </script>
+</body>
+</html>

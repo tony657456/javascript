@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #portfolio{font-size: 20px; background-color: blueviolet;}
+        #portfolio_s{font-size: 20px; background-color: rgb(168, 211, 236);}
+    </style>
+</head>
+<body>
+  
+    <div class = "container">
+        <ul id="tutorial">
+            <li class="html">1</li>
+            <li class="css">2</li>
+            <li class="css3">3</li>
+            <li class="javascript">4</li>
+            <li class="jquery">5</li>
+            <li class="blank">6</li>
+        </ul>
+        <p id="portfolio">portfolio</p>
+    </div>
+
+    <script>
+        "use strict"
+        // 노드의 태그 이름 속성
+        // var html = document.querySelector(".html");
+        // var tagname = html.tagName;
+        // console.log("tagName= " + tagname);
+
+        // // 노드의 id 속성
+        // var ul = document.querySelector("#tutorial");
+        // var idName = ul.id
+        // console.log("idName= " + idName)
+
+        // // 노드의 클래스 이름 속성
+        // var li = document.querySelector("#tutorial li");
+        // for(var i = 0; i < li.length; i++){
+        //     if(li[i].className == "html"){
+        //         li[i].style.backgroundColor = "#666";
+        //     }
+        // }
+
+        // 노드의 속성 읽기
+        var li = document.querySelectorAll("#tutorial li");
+        for(var i = 0; i < li.length; i++) {
+            var className = li[i].getAttribute("class");
+            console.log("className: " + className)
+        }
+        
+        // 노드의 속성 제거
+        // var p = document.querySelectorAll("p");
+        // for(var i = 0; i< p.length; i++) {
+        //     if(p[i].textContent == "portfolio"){
+        //     p[i].removeAttribute("id");
+        //     }
+        // }
+        
+        // 노트의 속성 변경
+        var p = document.querySelectorAll("p");
+        for(var i = 0; i< p.length; i++) {
+            if(p[i].textContent == "portfolio"){
+            p[i].setAttribute("id", "portfolio_s");
+            }
+        }
+
+
+    </script>
+   
+</body>
+</html>

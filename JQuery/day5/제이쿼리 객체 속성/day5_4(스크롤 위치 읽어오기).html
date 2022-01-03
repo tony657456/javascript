@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+
+
+<style>
+
+    * { margin:0; padding:0; }
+
+    #wrapper { position: absolute; width:500px; height:500px; border:3px solid blue; left:100px; top:150px; }
+
+    #box { position:absolute; width:100px; height:100px; left:50px; top:50px; background:red; color:white;}
+
+</style>
+
+
+<script src="jquery.js"></script>
+
+<script>
+
+ $(document).ready(function(){
+     
+    $(window).on('scroll', function(){
+        var scl = $(window).scrollLeft();
+        var sct = $(window).scrollTop;
+
+        $("#wrap").find(".scrollLeft").text(scl);
+        $("#wrap").find(".scrollTop").text(sct);
+    });
+
+ });
+
+</script>
+
+
+
+
+</head>
+
+<body style="width: 200%; height: 3000px;">
+
+    <div id="wrap" style="position: fixed; top:0; left: 0;">
+        <p>scrollLeft = <span class="scrollLeft">0</span> </p>
+        <p>scrollTop = <span class="scrollTop">0</span> </p>
+    </div>
+
+</body>
+
+</html>
+

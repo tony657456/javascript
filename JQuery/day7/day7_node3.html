@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #portfolio{font-size: 20px; background-color: blueviolet;}
+        #portfolio_s{font-size: 20px; background-color: rgb(168, 211, 236);}
+    </style>
+    <script>
+        function writeTxt1(){
+            var area = document.querySelector(".note1");
+            area.innerHTML = "자바스크립트!!";
+        }
+
+        function writeTxt2(str){
+            var area = document.querySelector(".note2");
+            area.innerHTML = str;
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="writeTxt1()">event</button>
+    <textarea class="note1"></textarea>
+
+    <button onclick="writeTxt2('자바스크립트!!')">event2</button>
+    <textarea class="note2"></textarea>
+
+    <script>
+    "use strict"
+     
+
+    </script>
+   
+</body>
+</html>

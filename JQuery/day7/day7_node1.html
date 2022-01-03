@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class = "container">
+        <ul id="tutorial">
+            <li class="html">1</li>
+            <li class="css">2</li>
+            <li class="css3">3</li>
+            <li class="javascript">4</li>
+            <li class="jquery">5</li>
+            <li class="blank">6</li>
+        </ul>
+        <p id="portpolio">7</p>
+    </div>
+
+    <script>
+        "use strict"
+
+        // id로 접근
+        // document.getElementById(id)
+        // var tutorial = document.getElementById("tutotial");
+        // tutorial.style.backgroundColor="#666";
+
+        // tag로 접근
+        // var li = document.getElementsByTagName("li");
+        // for(var i = 0; i < li.length; i++) {
+        //     li[i].style.backgroundColor="#666";
+        // }
+
+        // class로 접근
+        // var html = document.getElementsByClassName("html");
+        // console.log(html);
+
+        // css기법으로 첫번째 노드 선택
+        // var li = document.querySelector("#tutorial > li");
+        // li.style.backgroundColor = "#333";
+
+        // css기법으로 전체 노드 선택
+        var li = document.querySelectorAll("#tutorial > li");
+        for(var i = 0; i < li.length; i++) {
+            li[i].style.backgroundColor = "#333";
+            
+            // html 그리고 css만 찾아서 스타일적용
+            if(li[i].textContent == "HTML" || li[i].textContent == "CSS"){
+            li[i].style.backgroundColor="#ccc";
+            }
+        }
+
+
+    </script>
+   
+</body>
+</html>

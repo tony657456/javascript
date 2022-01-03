@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body style="height: 5000px;">
+    <p><b>여기를 클릭해보세요</b></p>
+    <p class="btn2"><b>여기를 더블클릭해보세요</b></p>
+    <p class="btn3"><b>이곳에 마우스를 가져다 대 보세요</b></p>
+    <p class="btn4"><b>이곳에 마우스를 가져다 대 보세요</b></p>
+    <p class="btn5"><b>마우스의 포인트를 이곳에 대 보세요</b></p>
+
+    <br><br><br><hr><br><br><br>
+
+    <p>마우스 좌표:<span></span></p>
+
+    <br><br><br><hr><br><br><br>
+
+    <div style = "border:1px solid #000; padding: 10px;">
+        이름: <input type = "text" /><br/>
+        주소: <input type = "text" />
+    </div>
+
+    <br><br><br><hr><br><br><br>
+
+    <p class="btn6"><b>여기를 클릭해보세요</b></p>
+
+    <br><br><br><hr><br><br><br>
+
+    <p class="btn7"><b>마우스를 여기에 대보세요</b></p>
+
+    <script>
+        $(document).ready(function(){
+            // $("p").click(function() {
+            //     alert("텍스트 선택");
+            // });
+
+            // $(".btn2").dblclick(function() {
+            //     alert("텍스트 선택");
+            // });
+
+            // // ***************** this는 현재 마우스가 적용된 대상을 의미
+            // $(".btn3").hover(
+            //     function() {
+            //         $(this).css("background-color", "yellow");
+            //     }, // 마우스를 호버했을 때
+            //     function() {
+            //         $(this).css("background-color", "pink");
+            //     }         
+            // );
+
+            // $(".btn4").mouseover(function(){
+            //     $(this).css("background-color", "yellow");
+            // });
+
+            // $(".btn4").mouseout(function(){
+            //     $(this).css("background-color", "pink");
+            // });
+
+            // $(".btn5").mouseenter(function(){
+            //     $(this).css("background-color", "yellow");
+            // });
+
+            // $(".btn5").mouseleave(function(){
+            //     $(this).css("background-color", "pink");
+            // });
+
+            // $(document).mousemove((e) =>{ // e, event 함수의 매개변수
+            //     $("span").text(event.pageX + "," + event.pageY)
+            // });
+
+            $("div").focusin(function() {
+                $(this).css("background-color", "#ffffcc");
+            });
+
+            
+            $("div").focusout(function() {
+                $(this).css("background-color", "#ffffff");
+            });
+
+            $(".btn6").mouseup(function(){
+                $(this).after("<p style='color:green'>마우스UP</p>")
+            });
+            $(".btn6").mousedown(function(){
+                $(this).after("<p style='color:red'>마우스DOWN</p>")
+            });
+
+            // 하나의 대상에 여러가지 이벤트 적용할 on() 메소드를 사용
+            $(".btn7").on({
+                click:function(){
+                    $(this).css("background-color", "#ff0000");
+                },
+                mouseover:function(){
+                    $(this).css("background-color", "blue");
+                }
+            })
+        });
+    </script>
+</body>
+</html>

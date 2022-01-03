@@ -1,0 +1,236 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main section {
+  margin: 20px 0px;
+}
+
+header {
+  background-image: url("../images/background.jpg");
+  height: 880px;
+  background-size: 100% 100%;
+}
+
+/* 네비게이션 디자인 시작 -------------------- */
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 로고 디자인 시작 */
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* 메뉴 디자인 시작 */
+.menu {
+  display: flex;
+}
+
+.menu div {
+  margin-left: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
+.menu a:hover {
+  color: rgb(218, 224, 228);
+}
+/* 메뉴 디자인 끝 */
+/* 네비게이션 디자인 끝 -------------------- */
+
+.search_box {
+  width: 430px;
+  background-color: white;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+  top: 10px;
+  left: 50px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px 0px gray;
+}
+
+.search_title {
+  padding: 10px 0px;
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(75, 75, 75);
+}
+
+.search_form_table td {
+  width: 100%;
+}
+
+.search_form_title {
+  padding: 10px 0px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(75, 75, 75);
+}
+
+.search_form_input {
+  height: 45px;
+  width: 100%;
+  color: grey;
+  font-size: 15px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.search_button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search_button button {
+  background-color: #ff5a5f;
+  color: white;
+  width: 70px;
+  height: 45px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.search_button button:hover {
+  background-color: #fc373d;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main_box {
+  width: 80%;
+  flex-direction: column;
+}
+
+.around_title {
+  font-size: 25px;
+  font-weight: 800;
+  color: rgb(75, 75, 75);
+  margin: 20px 0px;
+}
+
+.around_content_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.around_content {
+  display: flex;
+  height: 70px;
+  width: 24%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px 0px rgb(170, 170, 170);
+}
+
+.around_content_img {
+  flex: 1;
+}
+
+.around_content_text {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+
+.around_content_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.background_content {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.background_content_img {
+  display: flex;
+  width: 100%;
+}
+
+.background_content_img img {
+  width: 100%;
+  height: 300px;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 6px;
+}
+
+.recommend {
+  width: 100%;
+  height: 300px;
+  margin: 20px 0px;
+}
+
+.recommend_title {
+  font-size: 25px;
+  font-weight: 800;
+  color: rgb(75, 75, 75);
+  margin: 0px 0px 15px 0px;
+}
+
+.recommend_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommend_content_img {
+  display: flex;
+  height: 250px;
+  width: 19%;
+}
+
+.recommend_content_img img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 6px;
+}
+
+.plus {
+  margin: 20px 0px;
+}
+
+.plus_main_title {
+  font-size: 25px;
+  font-weight: 800;
+  color: rgb(75, 75, 75);
+}
+
+.plus_sub_title {
+  margin: 0px 0px 20px;
+}
+
+.plus_content {
+  width: 100%;
+  height: 250px;
+}
+
+.plus_content_img {
+  width: 100%;
+  height: 100%;
+}
+
+.plus_content_img img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 6px;
+}

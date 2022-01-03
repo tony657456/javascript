@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{ margin:0; padding:0; height: 3000px;}
+        img{border:0;}
+        ul, li{ list-style:none;}
+        a{ text-decoration:none; color:#333;}
+
+
+        .all{width: 100%;}
+        .header{margin: 0 auto; display: flex; width: 1000px; height: 120px; background-color: rgb(148, 144, 144);
+                position: relative;}
+        .logo{position: absolute; top: 33px; left: 30px; width: 130px; height: 50px;
+              background-color: rgb(235, 195, 121); text-align: center; font-size: 24px;}
+
+        /* 메인메뉴 */
+        .menu_box{position: absolute; width: 700px; height: 50px; top: 33px; left: 250px;
+                  background-color: rgb(244, 244, 247);}
+        .menu_box > ul{display: flex; justify-content: space-between;}
+        .menu_box > ul > li.menu{font-size: 15px; position: relative;
+                                margin: 14px auto; cursor: pointer; color: white;}
+                                
+        /* 서브메뉴 */
+        .sub_menu{position: absolute; top: 23px; z-index: 3000;}
+        .sub_menu > li{width: 80px; height: 30px; background-color: white; border: 1px solid rgb(199, 195, 195);
+                             color: #333;}
+
+        /* 슬라이딩 박스 */
+        .sliding_box{margin: 0 auto; width: 1000px; height: 255px; background-color: rgb(83, 82, 82);
+                     position: relative;}
+        .img_box{position: relative; width: 100%; height: 100%; overflow: hidden;}
+        .img_box li{width: 100%; height: 100%; position: absolute; top: 0;}
+        .img_box li:nth-child(1){background-color: red; left: 0%;}
+        .img_box li:nth-child(2){background-color: blue; left: 100%;}
+        .img_box li:nth-child(3){background-color: rgb(144, 230, 144); left: 200%;}
+
+        .sliding_box .btns{position: absolute; bottom:40px; left: 50%; display: flex;}
+        .sliding_box .btns > li{width: 15px; height: 15px; margin-right: 10px;
+                                border-radius: 50%; background-color: aliceblue;}
+        .sliding_box .btns > li > a{display: block; text-indent: -9999px; overflow: hidden;} /*text-indent 내어쓰기, 들여쓰기로 a태그 글자를 그냥 안보이게 만든것 */
+        .sliding_box .left_btn{float: left; position: absolute; top:120px; left:50px; z-index: 6000;
+                               width: 40px; height: 40px; border-radius:50%;
+                               background-color: darkseagreen;
+                               text-align: center; line-height: 40px;
+                               border: 2px solid #fff;}
+        .sliding_box .right_btn{float: left; position: absolute; top:120px; right:50px; z-index: 6000;
+                               width: 40px; height: 40px; border-radius:50%;
+                               background-color: darkseagreen;
+                               text-align: center; line-height: 40px;
+                               border: 2px solid #fff;}
+
+
+
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/test1.js"></script>
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+            <div class="logo"><h3>logo</h3></div>
+            <div class="menu_box">
+                <ul class="main_menu">
+                    <li class="menu"><a href="#">menu</a>
+                        <ul class="sub_menu">
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">menu</a>
+                        <ul class="sub_menu">
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">menu</a>
+                        <ul class="sub_menu">
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">menu</a>
+                        <ul class="sub_menu">
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">menu</a>
+                        <ul class="sub_menu">
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                            <li>sub_menu</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sliding_box">
+            <div class="img_box">
+                <ul class="imgs">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <ul class="btns">
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+            </ul>
+
+            <a href="#" class="left_btn">왼</a>
+            <a href="#" class="right_btn">오</a>
+        </div>
+           
+
+            <article class="cons">
+                <div class="con1_imgs_box">
+                    <ul class="con1_imgs">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+
+                <div class="con1_btn_box">
+                    <ul class="con1_imgs_btns">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+
+                <div class="con2">con2</div>
+                <div class="con3">con3</div>
+                <div class="con4">con4</div>
+                <div class="con5">con5</div>
+
+
+            </article>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".sub_menu").hide();
+
+            $(".main_menu > li").hover(
+                function(){
+                    $(this).find(".sub_menu").slideDown();
+                },
+                function(){
+                    $(".sub_menu").hide();
+                }
+            );
+
+            var current = 0;
+            var setIntervalId;
+
+            $(".btns > li").click(function(e){
+                e.preventDefault();
+                var i = $(this).index();
+                movie(i);
+                console.log("나 클릭됐다!!!!");
+            });
+
+            $(".left_btn").click(function() {
+                var l = current - 1;
+                if(l <= -3){
+                    l = 0;
+                }
+                movie_l(l);
+            });
+
+            $(".right_btn").click(function() {
+                var r = current + 1;
+                if(r >= 3){
+                    r = 0;
+                }
+                movie(r);
+            });
+
+            // 슬라이딩 이미지 오른쪽 버튼과 아래 버튼 3개
+            function movie(n){
+                var currentEl = $(".imgs > li").eq(current);
+                var nextEl = $(".imgs > li").eq(n)
+                currentEl.css({left:'0%'}).animate({left:'-100%'});
+                nextEl.css({left:'100%'}).animate({left:'0%'});
+
+                current = n
+                console.log("색깔 바껴라 좀!!");
+            }
+
+            // 슬라이딩 왼쪽 버튼
+            function movie_l(n){
+                var currentEl = $(".imgs > li").eq(current);
+                var nextEl = $(".imgs > li").eq(n);
+                currentEl.css({left:'0%'}).animate({left:'100%'});
+                nextEl.css({left:'-100%'}).animate({left:'0%'});
+   
+                current = n
+            }
+
+            timer();
+
+            $(".img_box").mouseover(function(){
+                clearInterval(setIntervalId);
+            });
+
+            $(".img_box").mouseout(function(){
+                timer();
+            });
+
+
+           function timer(){
+                setIntervalId = setInterval(function(){
+                    var n = current + 1;
+                    if(n==3){
+                        n=0;
+                    }
+                    movie(n);
+                }, 3000)
+            }
+});
+    </script>
+</body>
+</html>
