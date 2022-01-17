@@ -17,7 +17,7 @@ margin: 0 auto 이런식으로 잡으면 마진을 다 평등하게 부여하는
 ```
 
 <br/>
-###JavaScript
+## JavaScript
 
 ```javascript
 // clearInterval은 setInterval 함수를 초기화하는데 사용된다.
