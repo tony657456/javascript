@@ -15,8 +15,6 @@ float: block의 형태가 아니라 inline으로 사용할 수 있게 해주는 
 
 margin: 0 auto 이런식으로 잡으면 마진을 다 평등하게 부여하는 것
 ```
-
-<br/>
 ## JavaScript
 
 ```javascript
